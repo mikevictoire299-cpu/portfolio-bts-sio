@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio BTS SIO</title>
+    <link rel="stylesheet" href="portfolio Victoire M.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Portfolio BTS SIO</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#stage">Stages</a></li>
+                <li><a href="#synthese">Synthèse</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <img src="Mike Victoire.jpeg" alt="Photo profil" class="profile">
+        <h2>Bonjour, je suis étudiant en BTS SIO 💻</h2>
+        <p>Passionné par les réseaux, l’infrastructure système et les nouvelles technologies.</p>
+    </div>
+</section>
+
+<section id="about" class="fade-in">
+    <div class="container">
+        <h2>À propos de moi</h2>
+        <p>Étudiant en BTS SIO, motivé, curieux et rigoureux.</p>
+    </div>
+</section>
+
+<section id="skills" class="fade-in">
+    <div class="container">
+        <h2>Mes compétences</h2>
+        <div class="cards">
+            <div class="card">Configuration d’un ordinateur portable</div>
+            <div class="card">Préparation d’un audit IT</div>
+            <div class="card">Cartographie réseau</div>
+            <div class="card">Infrastructure réseau</div>
+            <div class="card">Réinitialisation via Hiren's BootCD</div>
+            <div class="card">Ajout sur domaine entreprise</div>
+        </div>
+    </div>
+</section>
+
+<section id="certifications" class="fade-in">
+    <div class="container">
+        <h2>Mes certifications</h2>
+        <div class="cards">
+            <div class="card">Comprendre le Web</div>
+            <div class="card">HTML5 / CSS3</div>
+            <div class="card">Réseaux TCP/IP</div>
+            <div class="card">Linux</div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="fade-in">
+    <div class="container">
+        <h2>Mes projets</h2>
+        <div class="cards">
+            <div class="card">Continuité des services</div>
+            <div class="card">Routage dynamique</div>
+            <div class="card">Routage Inter-VLANs</div>
+            <div class="card">Utilisation de Kali Linux</div>
+            <div class="card">Proxy via Squid</div>
+            <div class="card">VPN & administration distante</div>
+        </div>
+    </div>
+</section>
+
+<section id="stage" class="fade-in">
+    <div class="container">
+        <h2>Mes stages</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>CITA</h3>
+                <p>Configuration de postes utilisateurs, assistance technique et support informatique.</p>
+            </div>
+
+            <div class="card">
+                <h3>PROFIMA - Groupe GBH</h3>
+                <p>Audit IT, cartographie réseau, Active Directory et gestion d’infrastructure.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="synthese" class="fade-in">
+    <div class="container">
+        <h2>Tableau de synthèse BTS SIO</h2>
+        <p>Consulter mon tableau de synthèse :</p>
+
+        <a href="https://docs.google.com/spreadsheets/d/1IB4hboTF627CFpyuLSSNkHTRDI1_Bke0c0JSn4HG5Ic/edit?usp=sharing"
+           target="_blank"
+           class="btn-link">
+           Voir le tableau de synthèse
+        </a>
+    </div>
+</section>
+
+<section id="contact" class="fade-in">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email : tonmail@email.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Portfolio BTS SIO</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(section => {
+        const position = section.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.2;
+
+        if(position < screenPosition){
+            section.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
